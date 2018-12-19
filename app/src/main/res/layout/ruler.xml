@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:background="@mipmap/image"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_weight="0.09">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:text="In this game you attempt to guess the number the Android device has chosen. The response to your guess will tell you which digits in your guess are present in the secret number, and which one of them are in the right spot."
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_weight="0.19">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:text="Digits – number of digits present and in the right spot."
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        <TextView
+            android:text="Places – number of digits present but are NOT in the right spot."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="0.04">
+
+        <TextView
+            android:text="Example:  Secret number: 4271"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_weight="0.01"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+        <TextView
+            android:text="Guess: 1234                                                                                       Answer: 1 places and 2 digits. "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:layout_weight="0.03"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+    </LinearLayout>
+</LinearLayout>
